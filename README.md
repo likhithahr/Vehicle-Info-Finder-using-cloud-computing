@@ -57,7 +57,8 @@ The system follows a layered architecture where the React frontend communicates 
 ---
 # 🏗️ System Architecture
 
-'
+'''text
+
                          👤 USER
                            │
                            ▼
