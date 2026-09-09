@@ -55,10 +55,9 @@ The system follows a layered architecture where the React frontend communicates 
 - MongoDB Atlas used as the cloud database
 
 ---
-
 # 🏗️ System Architecture
 
-```text
+'
                          👤 USER
                            │
                            ▼
@@ -262,5 +261,6 @@ Manage your vehicle. Track your insurance. Stay informed.
 ☁️ Built with MERN + AWS
 
 </p> ```
+
 
 
