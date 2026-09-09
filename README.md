@@ -81,25 +81,35 @@ The system follows a layered architecture where the React frontend communicates 
                   │  Cloud Database  │
                   └──────────────────┘
 
+# 🛠️ Technology Stack
+
+### Frontend
+- React.js — User interface and frontend development
+
+### Backend
+- Node.js — Backend JavaScript runtime
+- Express.js — REST API and backend framework
+
+### Database
+- MongoDB Atlas — Cloud-hosted database
+
+### Cloud Services
+- AWS S3 — React frontend hosting
+- AWS EC2 — Node.js backend hosting
+- AWS IAM — AWS access and permissions
+
+### Other Technologies
+- NodeMailer — Email notifications
+- Cron Jobs — Scheduled expiry checks
+- JWT — Authentication
+- UPI QR — Insurance renewal payment flow
 
 
-#🛠️ Technology Stack
-Technology	Purpose
-⚛️ React.js	Frontend user interface
-🟢 Node.js	Backend JavaScript runtime
-🚂 Express.js	REST API and backend framework
-🍃 MongoDB Atlas	Cloud database
-☁️ AWS S3	React frontend hosting
-☁️ AWS EC2	Backend server hosting
-🔐 AWS IAM	AWS access and permissions
-📧 NodeMailer	Email notifications
-⏰ Cron Jobs	Scheduled expiry checks
-💳 UPI QR	Insurance renewal payment flow
-🔑 JWT	Authentication
+# 🔄 Major Workflows
 
+## 🔐 Registration & Login
 
-#🔄 Major Workflows
-🔐 Registration & Login
+```text
 User
  ↓
 Signup / Login
@@ -114,22 +124,21 @@ Authentication
  ↓
 Dashboard
 
-#🚘 Vehicle Information
+🚘 Vehicle Information
 User enters vehicle details
           ↓
      React Frontend
           ↓
-      REST API
+       REST API
           ↓
- Node.js + Express
+   Node.js + Express
           ↓
-    MongoDB Atlas
+     MongoDB Atlas
           ↓
    Vehicle information
           ↓
-   Displayed to user
-  
-#📧 Automated Expiry Reminder
+    Displayed to user
+📧 Automated Expiry Reminder
 
 The application uses scheduled backend jobs to check vehicle expiry information.
 
@@ -145,13 +154,13 @@ Expiry approaching?
       ↓
    NodeMailer
       ↓
- Email Notification
+Email Notification
       ↓
-      User
+     User
 
 The reminder system checks upcoming insurance expiry dates and triggers an email when the expiry is within the configured reminder period.
 
-#💳 Insurance Renewal
+💳 Insurance Renewal
 Insurance Page
       ↓
 Enter vehicle + insurance details
@@ -170,9 +179,7 @@ Generate receipt
 
 Note: The current implementation uses user confirmation for payment completion rather than live payment-gateway verification.
 
-
-
-#☁️ AWS Cloud Deployment
+☁️ AWS Cloud Deployment
 Frontend — AWS S3
 
 The React application is built and hosted as a static website using Amazon S3.
@@ -188,8 +195,7 @@ React Application
 Static Website Hosting
        ↓
     Public URL
-
-#Deployment Steps
+Deployment Steps
 Build the React application.
 Create an S3 bucket.
 Enable static website hosting.
@@ -207,16 +213,9 @@ Node.js + Express
    Backend APIs
        ↓
  MongoDB Atlas
+🗄️ Database
 
-The backend was first developed and tested locally before being deployed to EC2.
-
-
-
-#🗄️ Database
-
-The application uses MongoDB Atlas, a cloud-hosted MongoDB service.
-
-Major data areas include:
+The application uses MongoDB Atlas as the cloud database.
 
 MongoDB Atlas
 │
@@ -236,27 +235,53 @@ MongoDB Atlas
     └── Payment confirmation details
 
 
-#⚠️ Current Limitations
+🧪 Development & Testing
+
+The application was developed and tested locally before cloud deployment.
+
+Frontend
+React.js
+localhost:3000
+Backend
+Node.js + Express.js
+localhost:5001
+
+The backend was connected to MongoDB Atlas during local testing to verify API operations and database communication before deployment.
+
+⚠️ Current Limitations
 Vehicle details are entered manually.
 UPI payment confirmation currently depends on user acknowledgment.
 There is no live payment-gateway verification.
 Email reminders depend on the backend server and scheduled jobs being available.
 No two-factor or biometric authentication.
 The current system is designed for individual users rather than large-scale fleet management.
+🚀 Future Improvements
+Integrate RTO / government vehicle databases
+Integrate a secure payment gateway
+Add automatic payment verification
+Implement two-factor authentication
+Improve mobile responsiveness
+Add fleet-management functionality
+Add advanced vehicle analytics
+Improve production scalability and monitoring
+💡 What I Learned
 
+Through this project, I gained practical experience in:
 
+Full-stack MERN development
+REST API design
+Frontend-backend integration
+MongoDB Atlas
+AWS EC2 deployment
+AWS S3 static hosting
+Cloud-based application architecture
+Authentication and middleware
+Automated backend tasks
+Email automation
+UPI-based payment workflows
+Database integration
 
-#🚀 Future Improvements
-🔗 Integrate RTO / government vehicle databases
-💳 Integrate a secure payment gateway
-✅ Add automatic payment verification
-🔐 Implement two-factor authentication
-📱 Improve mobile responsiveness
-🚛 Add fleet-management functionality
-📊 Add advanced vehicle analytics
-☁️ Improve production scalability and monitoring
-
-#<p align="center">
+<p align="center">
 🚗 Vehicle Info Finder
 
 Manage your vehicle. Track your insurance. Stay informed.
