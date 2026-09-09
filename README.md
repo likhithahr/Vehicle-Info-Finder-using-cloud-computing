@@ -83,8 +83,7 @@ The system follows a layered architecture where the React frontend communicates 
 
 
 
-
-🛠️ Technology Stack
+#🛠️ Technology Stack
 Technology	Purpose
 ⚛️ React.js	Frontend user interface
 🟢 Node.js	Backend JavaScript runtime
@@ -99,7 +98,7 @@ Technology	Purpose
 🔑 JWT	Authentication
 
 
-🔄 Major Workflows
+#🔄 Major Workflows
 🔐 Registration & Login
 User
  ↓
@@ -114,7 +113,8 @@ MongoDB Atlas
 Authentication
  ↓
 Dashboard
-🚘 Vehicle Information
+
+#🚘 Vehicle Information
 User enters vehicle details
           ↓
      React Frontend
@@ -128,7 +128,8 @@ User enters vehicle details
    Vehicle information
           ↓
    Displayed to user
-📧 Automated Expiry Reminder
+  
+#📧 Automated Expiry Reminder
 
 The application uses scheduled backend jobs to check vehicle expiry information.
 
@@ -150,7 +151,7 @@ Expiry approaching?
 
 The reminder system checks upcoming insurance expiry dates and triggers an email when the expiry is within the configured reminder period.
 
-💳 Insurance Renewal
+#💳 Insurance Renewal
 Insurance Page
       ↓
 Enter vehicle + insurance details
@@ -171,7 +172,7 @@ Note: The current implementation uses user confirmation for payment completion r
 
 
 
-☁️ AWS Cloud Deployment
+#☁️ AWS Cloud Deployment
 Frontend — AWS S3
 
 The React application is built and hosted as a static website using Amazon S3.
@@ -187,7 +188,8 @@ React Application
 Static Website Hosting
        ↓
     Public URL
-Deployment Steps
+
+#Deployment Steps
 Build the React application.
 Create an S3 bucket.
 Enable static website hosting.
@@ -210,7 +212,7 @@ The backend was first developed and tested locally before being deployed to EC2.
 
 
 
-🗄️ Database
+#🗄️ Database
 
 The application uses MongoDB Atlas, a cloud-hosted MongoDB service.
 
@@ -234,7 +236,7 @@ MongoDB Atlas
     └── Payment confirmation details
 
 
-⚠️ Current Limitations
+#⚠️ Current Limitations
 Vehicle details are entered manually.
 UPI payment confirmation currently depends on user acknowledgment.
 There is no live payment-gateway verification.
@@ -244,7 +246,7 @@ The current system is designed for individual users rather than large-scale flee
 
 
 
-🚀 Future Improvements
+#🚀 Future Improvements
 🔗 Integrate RTO / government vehicle databases
 💳 Integrate a secure payment gateway
 ✅ Add automatic payment verification
@@ -254,7 +256,7 @@ The current system is designed for individual users rather than large-scale flee
 📊 Add advanced vehicle analytics
 ☁️ Improve production scalability and monitoring
 
-<p align="center">
+#<p align="center">
 🚗 Vehicle Info Finder
 
 Manage your vehicle. Track your insurance. Stay informed.
